@@ -1,44 +1,41 @@
-{"frames": {
-
-"dirt":
 {
-	"frame": {"x":0,"y":0,"w":64,"h":64},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":64,"h":64},
-	"sourceSize": {"w":64,"h":64}
-},
-"dirt-floor":
-{
-	"frame": {"x":64,"y":0,"w":64,"h":64},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":64,"h":64},
-	"sourceSize": {"w":64,"h":64}
-},
-"gold":
-{
-	"frame": {"x":128,"y":0,"w":64,"h":64},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":64,"h":64},
-	"sourceSize": {"w":64,"h":64}
-},
-"stone":
-{
-	"frame": {"x":192,"y":0,"w":64,"h":64},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":64,"h":64},
-	"sourceSize": {"w":64,"h":64}
-}},
-"meta": {
-	"app": "https://www.codeandweb.com/texturepacker",
-	"version": "1.0",
-	"image": "cannon-simple.png",
-	"format": "RGBA8888",
-	"size": {"w":256,"h":64},
-	"scale": "1",
-	"smartupdate": "$TexturePacker:SmartUpdate:d0f2e0fb8e708d5a1218ee5acbdeb98d:e8d89b904990db9d507145635955fa23:a0dbd95314ff1fe8262e91d90dc2be71$"
-}
+	"frames": {
+		"dirt": {
+			"frame": { "x": 0, "y": 0, "w": 64, "h": 64 },
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
+			"sourceSize": { "w": 64, "h": 64 }
+		},
+		"dirt-floor": {
+			"frame": { "x": 64, "y": 0, "w": 64, "h": 64 },
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
+			"sourceSize": { "w": 64, "h": 64 }
+		},
+		"gold": {
+			"frame": { "x": 128, "y": 0, "w": 64, "h": 64 },
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
+			"sourceSize": { "w": 64, "h": 64 }
+		},
+		"stone": {
+			"frame": { "x": 192, "y": 0, "w": 64, "h": 64 },
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
+			"sourceSize": { "w": 64, "h": 64 }
+		}
+	},
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "1.0",
+		"image": "cannon-simple.png",
+		"format": "RGBA8888",
+		"size": { "w": 256, "h": 64 },
+		"scale": "1",
+		"smartupdate": "$TexturePacker:SmartUpdate:d0f2e0fb8e708d5a1218ee5acbdeb98d:e8d89b904990db9d507145635955fa23:a0dbd95314ff1fe8262e91d90dc2be71$"
+	}
 }

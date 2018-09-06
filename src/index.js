@@ -3,8 +3,8 @@ import "phaser";
 var config = {
 	type: Phaser.AUTO,
 	parent: "phaser-example",
-	width: 800,
-	height: 600,
+	width: window.innerWidth,
+	height: window.innerHeight,
 	scene: {
 		preload: preload,
 		create: create
@@ -12,11 +12,10 @@ var config = {
 };
 
 var game = new Phaser.Game(config);
-window.game=game;
+window.game = game;
 var map;
 var groundLayer;
 function preload() {
-	this.load.image("logo", "assets/logo.png");
 	this.load.image("dirt", "assets/cannon/dirt.png");
 	this.load.image("gold", "assets/cannon/gold.png");
 	this.load.atlas(
@@ -24,7 +23,7 @@ function preload() {
 		"assets/cannon-simple.png",
 		"assets/cannon-simple.json"
 	);
-	this.load.image('tiles', 'assets/cannon-simple.png');
+	this.load.image("tiles", "assets/cannon-simple.png");
 	window.loadThing = this.load;
 }
 
@@ -33,11 +32,11 @@ function create() {
 
 	var logo = this.add.image(400, 150, "cannon-simple", "dirt");
 
-	map = this.add.tilemap("world-map",64,64);
+	map = this.add.tilemap("world-map", 64, 64);
 	//var tileset = map.addTilesetImage('tiles', undefined, undefined, undefined, undefined, 2);
 	window.map = map;
 	//map.addTilesetImage("cannon-simle", "dirt", 64, 64, 0, 0, 1);
-	var tileset=map.addTilesetImage("tiles",null, 64, 64, 0, 0, 0);
+	var tileset = map.addTilesetImage("tiles", null, 64, 64, 0, 0, 0);
 
 	//map.setCollisionBetween(1, 12);
 
@@ -51,7 +50,7 @@ function create() {
 		64,
 		64
 	);
-window.groundLayer=groundLayer;
+	window.groundLayer = groundLayer;
 	// groundLayer.resizeWorld();
 
 	//game.physics.startSystem(Phaser.Physics.ARCADE);
@@ -64,7 +63,7 @@ window.groundLayer=groundLayer;
 		yoyo: true,
 		loop: -1
 	});
-	map.fill(0,0,0,10,10,true,"ground");
-	map.fill(1,1,1,8,8,true,"ground");
+	map.fill(0, 0, 0, 10, 10, true, "ground");
+	map.fill(1, 1, 1, 8, 8, true, "ground");
 	//map.putTileAt(1,1,0,true);
 }
